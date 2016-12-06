@@ -32,7 +32,7 @@ public class MainWorker {
 //            System.out.println(contributor.getLogin() + " (" + contributor.getContributions() + ")");
 //        }
 
-        LoginService loginService = ServiceGenerator.createService(LoginService.class, "miltomasz", "balon9010");
+        LoginService loginService = ServiceGenerator.createService(LoginService.class, "miltomasz", "");
         Call<User> call = loginService.basicLogin();
 
         User user = call.execute().body();
